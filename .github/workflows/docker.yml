@@ -99,7 +99,7 @@ jobs:
           pull: true
           push: true
           platforms: "linux/arm,linux/amd64,linux/arm64,linux/ppc64le,linux/s390x"
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: "latest"
           labels: ${{ steps.meta.outputs.labels }}
           annotations: ${{ steps.meta.outputs.annotations }}
           cache-from: type=gha,scope=${{ matrix.os }}
