@@ -98,7 +98,7 @@ jobs:
           pull: true
           push: true
           platforms: "linux/arm,linux/amd64,linux/arm64,linux/ppc64le,linux/s390x"
-          tags: "latest"
+          tags: "v4.0"
           labels: ${{ steps.meta.outputs.labels }}
           annotations: ${{ steps.meta.outputs.annotations }}
           cache-from: type=gha,scope=${{ matrix.os }}
